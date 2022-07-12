@@ -68,7 +68,6 @@
                     font-weight: 600;
                     font-size: 1.1rem;
                     margin-left: 2rem;
-
                 }
             }
         }
@@ -153,7 +152,8 @@
         text-align: center;
 
         p {
-            font-size: .8rem;
+            font-size: .9rem;
+            text-transform: uppercase;
             color: rgb(219, 129, 129);
         }
         
@@ -167,7 +167,7 @@
         }
 
         h2 {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 400;
             line-height: 1.5rem;
         }
@@ -175,10 +175,72 @@
         .btn__middle-red {
             border: none;
             border-radius: 2px;
-            padding: .5rem;
+            padding: .6rem;
             margin-top: 1rem;
-            font-size: .8rem;
+            font-size: .9rem;
             background-color: #FFCCCC;
         }
+    }
+}
+
+/* BOTTOM SECTION */
+
+.benefits__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+
+    .benefits__container-heading {
+        text-align: center;
+
+        h1 {
+            font-weight: 300;
+            letter-spacing: .2rem;
+        }
+
+        h2 {
+            font-size: .8rem;
+            font-weight: 700;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            color: #D18B8B;
+        }
+    }
+
+    .benefits__container-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+
+        .benefits__container-content-card {
+
+            h1 {
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                margin-top: 1.5rem;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.final__img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5rem;
+
+    img {
+        width: 50%;
+        margin: 0 .8rem;
     }
 }
