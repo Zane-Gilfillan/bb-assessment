@@ -27,6 +27,14 @@
             line-height: 1.9rem;
         }
     }
+
+    @media screen and (max-width: 415px) {
+        .about__container-statement {
+            img {
+                margin-bottom: 5rem;
+            }
+        }
+    }
 }
 
 .news__letter {
@@ -125,6 +133,48 @@
                 font-size: 1rem;
             }
             
+        }
+    }
+
+    @media screen and (max-width: 913px) {
+        .news__letter-card {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+            .news__letter-banner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                min-width: 200px;
+                min-height: 200px;
+
+            }
+
+            .news__letter-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 415px) {
+        .news__letter-card {
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+
+            .news__letter-form {
+
+                .news__letter-form-input {
+                    input {
+                        font-size: 1rem;
+                    }
+                }
+            }
         }
     }
 }

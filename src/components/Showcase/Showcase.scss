@@ -72,6 +72,51 @@
             }
         }
     }
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .featured__products-banner {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .featured__products-card-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+                
+                display: flex;
+                position: relative;
+                left: 1rem;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                margin: 1;
+
+                img {
+                    width: 100%;
+                }
+
+                .card__info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* MIDDLE SECTION LEFT */
@@ -124,6 +169,36 @@
             margin-top: 1rem;
             font-size: .8rem;
             background-color: #B8D1ED;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
+
+        .featured__products-middle-banner-left {
+            display: flex;
+            flex-direction: column;
+
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-top: 1rem;
+
+            p {
+                font-weight: 700;
+                font-size: .9rem;
+            }
+
+            h1 {
+                font-weight: 500;
+            }
         }
     }
 }
@@ -181,6 +256,32 @@
             background-color: #FFCCCC;
         }
     }
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column-reverse;
+
+        img {
+            width: 100%;
+        }
+
+        .featured__products-middle-banner-right {
+            position: relative;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin-top: 1rem;
+
+            p {
+                font-weight: 700;
+            }
+
+            h1 {
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 /* BOTTOM SECTION */
@@ -231,6 +332,13 @@
             }
         }
     }
+
+    @media screen and (max-width: 700px) {
+        .benefits__container-content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
 
 .final__img-container {
@@ -242,5 +350,14 @@
     img {
         width: 50%;
         margin: 0 .8rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 100%;
+        }
     }
 }
