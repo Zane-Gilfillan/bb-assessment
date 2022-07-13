@@ -17,6 +17,9 @@ import gift from '../assets/BB-gift-graphic.png'
 import stroller from '../assets/BB-stroller-graphic.png'
 import babiesleft from '../assets/welovebabies-left.png'
 import babiesright from '../assets/welovebabies-right.png'
+import signature from '../assets/BB-signature-graphic.png'
+import email from '../assets/email.svg'
+import percent from '../assets/percent.svg'
 
 
 export default {
@@ -39,4 +42,7 @@ export default {
     stroller,
     babiesleft,
     babiesright,
+    signature,
+    email,
+    percent,
 }
