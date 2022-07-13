@@ -36,6 +36,11 @@
                 font-weight: 700;
                 line-height: .8rem;
             }
+
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: rgb(139, 144, 148);
+            }
         }
 
         .footer__container-card-icons {
@@ -161,6 +166,7 @@
             a {
                 font-size: .8rem;
 
+                transition: all .3s ease-in-out;
                 &:hover {
                     cursor: pointer;
                     color: #FFCCCC;

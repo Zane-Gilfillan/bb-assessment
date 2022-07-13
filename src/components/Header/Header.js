@@ -64,8 +64,6 @@ function Header() {
                     
                     <div className={visible ? 'element-visible' : 'element-hidden'}><input type="text" placeholder="Search..."></input></div>
                     <img  style={{ cursor: isHovering ? 'pointer' : ''}} 
-                          onMouseEnter={handleMouseEnter} 
-                          onMouseLeave={handleMouseLeave} 
                           onClick={() => setVisible(!visible)}
                           src={images.search} 
                           alt=""

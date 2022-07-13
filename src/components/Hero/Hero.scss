@@ -35,6 +35,11 @@
             padding: .5rem;
             background-color: #D5DC91;
             margin-top: 1rem;
+
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: #c6d725;
+            }
         }
 
         @media screen and (max-width: 1023px) {
@@ -87,6 +92,11 @@
             border-radius: 2px;
             padding: .5rem;
             background-color: #D5DC91;
+
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: #c6d725;
+            }
         }
 
         @media screen and (max-width: 1023px) {
@@ -139,6 +149,11 @@
             padding: .5rem;
             background-color: #D5DC91;
             margin-top: 2rem;
+
+            transition: all .3s ease-in-out;
+            &:hover {
+                background-color: #c6d725;
+            }
         }
 
         @media screen and (max-width: 1023px) {
