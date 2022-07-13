@@ -8,6 +8,7 @@
     margin-top: 7rem;
 
     .footer__container-card {
+        
         .footer__container-card-header {
             display: flex;
             justify-content: space-between;
@@ -90,6 +91,15 @@
         }
     }
 
+    @media screen and (min-width: 416px) {
+        .footer__container-card {
+
+            div {
+               display: block;
+            }
+        }
+    }
+
     @media screen and (max-width: 415px) {
         display: flex;
         flex-direction: column;
@@ -97,11 +107,9 @@
 
         
         .footer__container-card {
-            a {
-                display: none;
-            }
 
             .footer__container-card-header {
+
                 svg {
                     display: block;
                 }

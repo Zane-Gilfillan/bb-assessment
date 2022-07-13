@@ -18,6 +18,7 @@ function Header() {
     }
   
   return (
+    
     <>
         <div className="header">
                     {/* LEFT HEADER */}
