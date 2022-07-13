@@ -107,7 +107,7 @@ function Header() {
                                 </div>
                                 
                                 <ul>
-                                    {['babby apparel', 'baby gifts', 'furniture', 'bedding', 'lighting', 'sale', 'about'].map((item) => (
+                                    {['baby apparel', 'baby gifts', 'furniture', 'bedding', 'lighting', 'sale', 'about'].map((item) => (
                                         <li key={item}>
                                             <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>   
                                         </li>

@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Barlow';
+  font-family: 'Barlow', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

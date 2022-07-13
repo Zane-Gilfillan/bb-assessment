@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Americaneagle.com Assessment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Goal / Feedback
 
-## Available Scripts
+After reviewing the project I decided to fully reformat the code base using React and SASS to make it more readable for future devs which will also make it easier to develop the project further down the road. I will include photos of areas that were added and code snippets of some basic functionality.
+<br><br>
+## Improvements
+<br>
 
-In the project directory, you can run:
+### Fonts
 
-### `npm start`
+All fonts have been updated to reflect 'Barlow' and will revert to sans serif if needed
+<br>
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Main Navigation Menu - Mobile View
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![full navbar display](/src/assets/readme/mainnav.png)
 
-### `npm test`
+The menu will now collapse into a hidden hamburger menu when the screen is below 900px. It is styled to highlight the navigation links while still allowing users to login as well as search. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Site Search Bar
+When the search icon is clicked the login link will disapear and a search bar will apear. The user can click the search icon to remove the search bar as well which will bring back the login link to its originall positon.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![search bar activated](/src//assets/readme/mainnav_activesearch.png)
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The search bar appears by setting its inherit state to not visble. The icon then acts as a button toggling on/off its visiblity. This hook is also used to show the hamburger menu as well as open/collapse the mobile view of the footer.
+```
+    const [visible, setVisible] = useState(false);
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    <img  style={{ cursor: isHovering ? 'pointer' : ''}} 
+        onMouseEnter={handleMouseEnter} 
+        onMouseLeave={handleMouseLeave} 
+        onClick={() => setVisible(!visible)}
+        src={images.search} 
+        alt="searchbar icon"
+    />
 
-### `npm run eject`
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![full mobilenav display](/src//assets/readme/mobilenav.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
+There is still a visual glitch while the menu slides out. It does NOT affect usability, but I am still looking for a solution on debugging.
+<br>
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Icons
+Icons have been added in the navigation menu: Hamburger navigation, Cart Icon, as well as Search Icon
+<br>
+<br>
 
-## Learn More
+### Hero Banner Slideshow
+The hero slide show is now fully functional. The sale banners will be displayed until the screen reaches 1024px.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![hero image with banner 2](/src/assets/readme/heroimg-2.png)
+![hero image with banner 3](/src/assets/readme/heroimg-3.png)
+<br>
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Footer Responsiveness
+The footer is now fully responsive and will collapse on itself when the screen is in a mobile view (it is currently set on 412px which is the largest iPhone screen on the market, it can be changed to a wider screen if desired). An icon will appear on the right side of the screen for users to open/collapse each section of the footer
+![mobile footer closed](/src/assets/readme/mobile-footer-closed.png)
+![mobile footer open](/src/assets/readme/mobile-footer-open.png)
 
-### Code Splitting
+<br>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Responsive View
+The homepage is fully mobile friendly and will respond to all of the offered device dimensions that Chrome's dev tools show.

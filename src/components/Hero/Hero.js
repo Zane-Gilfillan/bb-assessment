@@ -30,10 +30,10 @@ const Hero = () => {
                             <MDBCarouselElement src={images.slide2} alt='...'></MDBCarouselElement>
                         </div>
                         <div className="hero__banner-two">
-                            <p>on sale</p>
-                            <h1>Infant Fall Outfits</h1>
+                            <p>brand new</p>
+                            <h1>Baby Knit Outfits</h1>
                             <img src={images.stardiv} alt="" />
-                            <h2>Save up to 50%</h2>
+                            <h2>Handmade, soft, comfortable, and breathable</h2>
                             <button className='hero__btn-two'>Shop Sale</button>
                         </div>
                     </div>
@@ -45,10 +45,10 @@ const Hero = () => {
                             <MDBCarouselElement src={images.slide3} alt='...'></MDBCarouselElement>
                         </div>
                         <div className="hero__banner-three">
-                            <p>on sale</p>
-                            <h1>Infant Fall Outfits</h1>
+                            <p>cuddly soft</p>
+                            <h1>Plush Stuffed Animals</h1>
                             <img src={images.stardiv} alt="" />
-                            <h2>Save up to 50%</h2>
+                            <h2>Huggable construction and charming design</h2>
                             <button className='hero__btn-three'>Shop Sale</button>
                         </div>
                     </div>
