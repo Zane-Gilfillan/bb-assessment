@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.scss'
 import { images } from '../../constants'
+import { motion } from 'framer-motion';
+import {HiMenuAlt4, HiX} from 'react-icons/hi';
 
 function Header() {
+    const [toggle, setToggle] = useState(false);
   return (
     <>
         <div className="header">
@@ -40,9 +43,33 @@ function Header() {
                 </div>
                 <div className="header__right-icons">
                     <img src={images.bag} alt="" />
+                    <span>5</span>
                     <img src={images.search} alt="" />
                 </div>
             </div>
+        </div>
+
+        {/* HAMBURGER MENU */}
+        <div className="header__hamburger">
+            <HiMenuAlt4 onClick={() => setToggle(true)} />
+
+            {
+                toggle && (
+                    <motion.div
+                        whileInView={{ x: [300,0] }}
+                        transition={{ duration: 0.85, ease: 'easeInOut' }}
+                    >
+                        <HiX onClick={() => setToggle(false)} />
+                        <ul>
+                            {['babby apparel', 'baby gifts', 'furniture', 'bedding', 'lighting', 'sale', 'about'].map((item) => (
+                                <li key={item}>
+                                    <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>   
+                                </li>
+                            ))}
+                        </ul>
+                    </motion.div>
+                )
+            }
         </div>
 
     </>
