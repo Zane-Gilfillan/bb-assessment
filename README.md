@@ -31,8 +31,6 @@ The search bar appears by setting its inherit state to not visble. The icon then
     const [visible, setVisible] = useState(false);
 
     <img  style={{ cursor: isHovering ? 'pointer' : ''}} 
-        onMouseEnter={handleMouseEnter} 
-        onMouseLeave={handleMouseLeave} 
         onClick={() => setVisible(!visible)}
         src={images.search} 
         alt="searchbar icon"

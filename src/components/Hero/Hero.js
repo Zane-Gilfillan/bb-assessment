@@ -33,7 +33,7 @@ const Hero = () => {
                             <p>brand new</p>
                             <h1>Baby Knit Outfits</h1>
                             <img src={images.stardiv} alt="blue line with star" />
-                            <h2>Handmade, soft, comfortable, and breathable</h2>
+                            <h2>Handmade, soft, comfortable,<br></br> and breathable</h2>
                             <button className='hero__btn-two'>Shop Sale</button>
                         </div>
                     </div>
