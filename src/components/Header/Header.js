@@ -83,15 +83,38 @@ function Header() {
                         whileInView={{ x: [300,0] }}
                         transition={{ duration: 0.85, ease: 'easeInOut' }}
                     >
-                        <HiX onClick={() => setToggle(false)} />
-                        <ul>
-                            {['babby apparel', 'baby gifts', 'furniture', 'bedding', 'lighting', 'sale', 'about'].map((item) => (
-                                <li key={item}>
-                                    <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>   
-                                </li>
-                            ))}
-                        </ul>
-                    </motion.div>
+                        
+                            <div className="header__hamburger-right">
+                                <HiX onClick={() => setToggle(false)} />
+                                <div className="header__hamburger-right-search">
+                                    <a href=""><p>Sign In</p></a>
+
+                                    <div className="icon-holder">
+                                        <img src={images.bag} alt="" />
+                                        <span>5</span>
+                                        
+                                        <img  style={{ cursor: isHovering ? 'pointer' : ''}} 
+                                        onMouseEnter={handleMouseEnter} 
+                                        onMouseLeave={handleMouseLeave} 
+                                        onClick={() => setVisible(!visible)}
+                                        src={images.search} 
+                                        alt=""
+                                        />
+                                    </div>
+
+                                    <div className={visible ? 'element-visible' : 'element-hidden'}><input type="text" placeholder="Search..."></input></div>
+                                </div>
+                                
+                                <ul>
+                                    {['babby apparel', 'baby gifts', 'furniture', 'bedding', 'lighting', 'sale', 'about'].map((item) => (
+                                        <li key={item}>
+                                            <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>   
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+            </motion.div>
                 )
             }
         </div>
