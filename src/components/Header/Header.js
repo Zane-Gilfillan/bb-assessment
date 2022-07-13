@@ -6,6 +6,17 @@ import {HiMenuAlt4, HiX} from 'react-icons/hi';
 
 function Header() {
     const [toggle, setToggle] = useState(false);
+    const [isHovering, setIsHovering] = useState(false);
+
+    const [visible, setVisible] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovering(true);
+    }
+    const handleMouseLeave = () => {
+        setIsHovering(false);
+    }
+  
   return (
     <>
         <div className="header">
@@ -39,12 +50,25 @@ function Header() {
             {/* RIGHT HEADER */}
             <div className="header__right">
                 <div className="header__right-signin">
-                    <p>Sign In</p>
+                <div className={visible ? 'element-hidden' : 'element-visible'}><p>Sign In</p></div>
                 </div>
                 <div className="header__right-icons">
                     <img src={images.bag} alt="" />
                     <span>5</span>
-                    <img src={images.search} alt="" />
+                    <div> 
+                        <style>{` .element-visible { display: block }
+                                    .element-hidden { display: none }
+                                `}
+                        </style>
+                    </div>
+                    <div className={visible ? 'element-visible' : 'element-hidden'}><input type="text" placeholder="Search..."></input></div>
+                    <img  style={{ cursor: isHovering ? 'pointer' : ''}} 
+                          onMouseEnter={handleMouseEnter} 
+                          onMouseLeave={handleMouseLeave} 
+                          onClick={() => setVisible(!visible)}
+                          src={images.search} 
+                          alt=""
+                    />
                 </div>
             </div>
         </div>
