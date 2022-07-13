@@ -20,6 +20,10 @@ import babiesright from '../assets/welovebabies-right.png'
 import signature from '../assets/BB-signature-graphic.png'
 import email from '../assets/email.svg'
 import percent from '../assets/percent.svg'
+import facebook from '../assets/facebook.svg'
+import twitter from '../assets/twitter.svg'
+import instagram from '../assets/instagram.svg'
+import tiktok from '../assets/tiktok.svg'
 
 
 export default {
@@ -45,4 +49,8 @@ export default {
     signature,
     email,
     percent,
+    facebook,
+    twitter,
+    instagram,
+    tiktok,
 }

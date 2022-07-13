@@ -1,0 +1,126 @@
+/* MAIN FOOTER */
+
+.footer__container {
+    background-color: white;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin-top: 7rem;
+
+    .footer__container-card {
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+
+            p {
+                text-transform: uppercase;
+                font-size: .8rem;
+                font-weight: 700;
+                line-height: .8rem;
+            }
+        }
+
+        .footer__container-card-icons {
+            display: flex;
+            position: relative;
+            right: 1rem;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .facebook {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .9rem;
+                background-color: #B8D1ED;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+
+            .twitter {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .9rem;
+                background-color: #D5DC91;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+
+            .instagram {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .9rem;
+                background-color: #FFCCCC;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+
+            .tiktok {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .9rem;
+                background-color: #FFEFBC;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+/* SUBFOOTER */
+
+.subfooter__container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    .subfooter__container-list {
+        display: flex;
+
+        li {
+            font-size: .8rem;
+            text-transform: capitalize;
+            list-style-type: none;
+
+            a {
+                font-size: .8rem;
+
+                &:hover {
+                    cursor: pointer;
+                    color: #FFCCCC;
+                }
+            }
+        }
+    }
+
+    p {
+        font-size: .8rem;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        margin-top: 1.5rem;
+    }
+}
